@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramune candy Laboratory｜明光キッズe ラムネの理科実験体験会（下井草・北砂・あざみ野）</title>
+<meta name="description" content="2026年8月22日(土)開催。明光キッズeのラムネ理科実験体験会「Ramune candy Laboratory」。英語にふれながら、しゅわしゅわのラムネとカラフルなゼリーポンチを作ろう！幼児〜小学生対象・参加費無料・各校定員6名。">
+<meta property="og:title" content="Ramune candy Laboratory｜明光キッズe ラムネの理科実験体験会">
+<meta property="og:description" content="英語にふれながら、しゅわしゅわラムネ＆ゼリーポンチを作る理科実験！8/22(土)・参加費無料・各校定員6名。">
+<link rel="icon" href="./images/favicon.ico">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+<!-- ===== フォント（公式と同じ Noto Sans JP ＋ 見出し用に fatfrank 代替の丸ゴシック） ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- ===== 公式サイトのデザインシステム（完コピの土台） ===== -->
+<link rel="stylesheet" href="./css/default.css">
+<link rel="stylesheet" href="./css/shared.css">
+
+<!-- ===== このイベントLP固有のスタイル ===== -->
+<style>
+:root{
+  --blue:#15B3EE; --blue-d:#0e93c6; --blue-pale:#D2F3FE; --blue-pale2:#eaf9ff;
+  --orange:#FCA400; --orange-d:#e89500;
+  --pink:#E61B64; --pink-d:#DA0150;
+  --green:#9BC714; --green-d:#7fae00;
+  --coral:#EA6161;
+  --cream:#FFFBEF; --ink:#1a1a1a; --gray:#707070; --line:#e7e7e7;
+  --shadow:0 12px 30px rgba(21,80,120,.10);
+  --shadow-s:0 6px 16px rgba(21,80,120,.10);
+}
+.ev *{box-sizing:border-box}
+.ev{font-family:"Noto Sans JP",sans-serif;color:var(--ink);line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:clip}
+.ev img{max-width:100%;height:auto;display:block}
+.ev a{color:inherit}
+.ev-wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* スマホ専用：ヘッダー右上の申込ボタン（PCは公式の申込ボタンを使用） */
+.ev-sp-cta{display:none}
+@media(max-width:768px){
+  .ev-sp-cta{display:flex;flex-direction:column;align-items:center;justify-content:center;position:fixed;top:0;right:0;height:55px;min-width:82px;padding:0 14px;background:var(--orange);color:#fff!important;font-weight:800;font-size:12px;line-height:1.3;text-decoration:none;text-align:center;z-index:1000;box-shadow:-2px 0 8px rgba(0,0,0,.10)}
+}
+.fnt-fatfrank{font-family:"fatfrank","Fredoka","Noto Sans JP",sans-serif!important;font-weight:700;letter-spacing:.04em}
+
+/* ---- 共通：セクション見出し（英語キーワード＋日本語） ---- */
+.ev-sec{padding:74px 0}
+.ev-head{text-align:center;margin-bottom:44px}
+.ev-head .en{display:block;font-size:54px;line-height:1;color:var(--blue);opacity:.9}
+.ev-head .en.o{color:var(--orange)} .ev-head .en.p{color:var(--pink)} .ev-head .en.g{color:var(--green-d)}
+.ev-head h2{font-size:28px;font-weight:800;margin-top:10px;line-height:1.4}
+.ev-head .lead{margin-top:14px;color:#444;font-size:15.5px}
+.ev-head .deco-line{display:inline-block;margin-top:16px;width:60px;height:5px;border-radius:5px;background:var(--orange)}
+
+/* ---- CTAボタン（公式＝オレンジのピル） ---- */
+.ev-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  background:var(--orange);color:#fff!important;font-weight:800;font-size:19px;text-decoration:none;
+  padding:20px 46px;border-radius:50px;box-shadow:0 8px 0 var(--orange-d);
+  transition:transform .12s ease,box-shadow .12s ease;border:none;cursor:pointer}
+.ev-btn:hover{transform:translateY(3px);box-shadow:0 5px 0 var(--orange-d)}
+.ev-btn .arr{font-size:.9em}
+.ev-btn.tel{background:var(--blue);box-shadow:0 8px 0 var(--blue-d)}
+.ev-btn.tel:hover{box-shadow:0 5px 0 var(--blue-d)}
+.ev-btn.sm{font-size:16px;padding:14px 30px;box-shadow:0 6px 0 var(--orange-d)}
+.ev-btn.sm:hover{box-shadow:0 3px 0 var(--orange-d)}
+
+/* ================= HERO ================= */
+.ev-hero{position:relative;background:
+   radial-gradient(circle at 12% 18%,#fff7d6 0 12px,transparent 13px),
+   linear-gradient(180deg,#bfeeff 0%,var(--blue-pale) 42%,#fff 100%);
+   padding:30px 0 70px;text-align:center}
+.ev-hero .confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.ev-hero .ev-wrap{position:relative;z-index:1}
+.ev-hero .confetti i{position:absolute;width:16px;height:16px;border-radius:50%;opacity:.5;box-shadow:inset 3px 3px 4px rgba(255,255,255,.78),0 1px 3px rgba(0,0,0,.04);animation:fizz 7s ease-in-out infinite}
+@keyframes fizz{0%{transform:translateY(10px) scale(.82);opacity:0}20%{opacity:.55}80%{opacity:.45}100%{transform:translateY(-66px) scale(1.08);opacity:0}}
+/* チラシ風 カラフルイベントタイトル */
+.lab-hero-title{margin:4px 0 10px;position:relative}
+.lab-hero-title::before{content:"";position:absolute;inset:-8px -1% 4px;pointer-events:none;z-index:2;background-repeat:no-repeat;background-position:1% 62%,12% 4%,99% 68%,88% 2%;background-size:26px,18px,24px,15px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FCA400'%3E%3Cpath d='M12 1c1.1 7.4 3.5 9.9 11 11-7.5 1.1-9.9 3.6-11 11-1.1-7.4-3.5-9.9-11-11 7.5-1.1 9.9-3.6 11-11Z'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23E61B64'%3E%3Cpath d='M12 1c1.1 7.4 3.5 9.9 11 11-7.5 1.1-9.9 3.6-11 11-1.1-7.4-3.5-9.9-11-11 7.5-1.1 9.9-3.6 11-11Z'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2315B3EE'%3E%3Cpath d='M12 1c1.1 7.4 3.5 9.9 11 11-7.5 1.1-9.9 3.6-11 11-1.1-7.4-3.5-9.9-11-11 7.5-1.1 9.9-3.6 11-11Z'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239BC714'%3E%3Cpath d='M12 1c1.1 7.4 3.5 9.9 11 11-7.5 1.1-9.9 3.6-11 11-1.1-7.4-3.5-9.9-11-11 7.5-1.1 9.9-3.6 11-11Z'/%3E%3C/svg%3E")}
+@media(max-width:680px){ .lab-hero-title::before{background-size:0,17px,0,14px} }
+.lab-eyebrow{display:inline-flex;flex-wrap:wrap;gap:6px 10px;justify-content:center;align-items:center;margin-bottom:10px;font-weight:800}
+.lab-eyebrow .e-shuwa{color:var(--pink);font-size:15px}
+.lab-eyebrow .e-chal{background:var(--green);color:#fff;padding:4px 15px;border-radius:50px;font-size:14.5px}
+.lab-title{font-family:"Fredoka",sans-serif;font-weight:700;font-size:clamp(42px,7.6vw,76px);line-height:1.04;letter-spacing:.01em;margin:0;-webkit-text-stroke:5px #fff;paint-order:stroke fill;filter:drop-shadow(0 3px 0 rgba(0,0,0,.07))}
+.lab-title .w{display:inline-block;width:.28em}
+@media(max-width:680px){ .lab-title{-webkit-text-stroke-width:4px;font-size:clamp(34px,11.5vw,54px)} .lab-eyebrow .e-shuwa,.lab-eyebrow .e-chal{font-size:12.5px} }
+.ev-hero .brandbar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:18px}
+.ev-hero .brandbar img{height:62px;width:auto}
+.ev-hero .eyebrow{display:inline-block;background:#fff;color:var(--pink);font-weight:800;
+  padding:7px 20px;border-radius:50px;font-size:15px;box-shadow:var(--shadow-s);margin-bottom:6px}
+.ev-hero .eyebrow .fnt-fatfrank{color:var(--pink);font-size:18px}
+.ev-hero h1{font-size:46px;line-height:1.32;font-weight:900;margin:14px 0 6px;letter-spacing:.01em}
+.ev-hero .sp-br{display:none}
+.ev-hero h1 .mark{position:relative;color:var(--blue-d);white-space:nowrap;font-weight:900}
+.ev-hero h1 .mark:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:14px;background:rgba(252,164,0,.45);z-index:-1;border-radius:8px}
+.ev-hero h1 .uchiwa{color:var(--pink);font-weight:900}
+.ev-hero .sub{font-size:17px;color:#33576a;max-width:640px;margin:0 auto 22px;font-weight:500}
+.ev-hero .hero-photo{position:relative;max-width:900px;margin:0 auto 8px}
+.ev-hero .hero-photo .shot{position:relative;margin:0}
+.ev-hero .hero-photo .shot img{width:100%;display:block;border-radius:20px;border:6px solid #fff;box-shadow:var(--shadow);object-fit:cover}
+.ev-hero .hero-photo.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.ev-hero .hero-photo.duo .shot img{aspect-ratio:4/3}
+.ev-hero .hero-photo.trio{display:grid;grid-template-columns:1.45fr 1fr;gap:14px;align-items:stretch}
+.ev-hero .hero-photo.trio .main{grid-column:1;grid-row:1/3}
+.ev-hero .hero-photo.trio .main img{height:100%}
+.ev-hero .hero-photo.trio .r1{grid-column:2;grid-row:1}
+.ev-hero .hero-photo.trio .r2{grid-column:2;grid-row:2}
+.ev-hero .hero-photo.trio .r1 img,.ev-hero .hero-photo.trio .r2 img{aspect-ratio:16/10}
+@media(max-width:680px){
+  .ev-hero .hero-photo.trio{grid-template-columns:1fr 1fr}
+  .ev-hero .hero-photo.trio .main{grid-column:1/3;grid-row:auto}
+  .ev-hero .hero-photo.trio .main img{height:auto;aspect-ratio:16/10}
+  .ev-hero .hero-photo.trio .r1{grid-column:1;grid-row:auto}
+  .ev-hero .hero-photo.trio .r2{grid-column:2;grid-row:auto}
+}
+.ev-hero .hero-photo .shot .cap{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);white-space:nowrap;
+  background:rgba(255,255,255,.92);color:#0e6f96;font-weight:800;font-size:13px;padding:5px 14px;border-radius:50px;box-shadow:var(--shadow-s)}
+/* 公式ヘッダーは max-width:768px で position:fixed。固定ヘッダー分の上余白を確保 */
+@media (min-width:681px) and (max-width:768px){ .ev-hero{padding-top:72px} }
+.ev-hero .hero-photo .ph{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff;aspect-ratio:16/9;object-fit:cover;width:100%}
+.ev-hero .hero-photo .pop{position:absolute;left:-14px;top:-14px;background:var(--pink);color:#fff;font-weight:800;
+  font-size:14px;border-radius:50%;width:96px;height:96px;display:flex;align-items:center;justify-content:center;
+  text-align:center;line-height:1.3;transform:rotate(-10deg);box-shadow:0 6px 14px rgba(230,27,100,.35)}
+.ev-hero .hero-photo .hero-imgnote{position:absolute;left:12px;bottom:10px;background:rgba(0,0,0,.42);color:#fff;
+  font-size:11px;padding:3px 9px;border-radius:7px;font-weight:600;letter-spacing:.02em}
+/* バッジ群 */
+.ev-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:30px auto 8px;max-width:760px}
+.ev-badges .b{background:#fff;border-radius:16px;box-shadow:var(--shadow-s);padding:12px 8px;flex:1 1 150px;min-width:140px}
+.ev-badges .b .k{font-size:12px;color:var(--gray);font-weight:700}
+.ev-badges .b .v{font-size:20px;font-weight:900;color:var(--ink);line-height:1.3}
+.ev-badges .b .v b{color:var(--pink);font-size:24px}
+.ev-badges .b .v .free{color:var(--orange);font-weight:900}
+.ev-hero .cta-row{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.ev-hero .cta-note{font-size:13px;color:#33576a}
+.ev-hero .ev-schools-line{margin:16px auto 0;font-size:15px;color:#33576a;font-weight:600}
+.ev-hero .ev-schools-line b{color:var(--blue-d);font-weight:800}
+/* フッターのリンクを中央揃え */
+#footer-info .inner{display:flex;justify-content:center;text-align:center}
+#footer-info .nav-ft{width:100%;text-align:center}
+#footer-info .nav-ft .top{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 26px}
+#footer-info{padding-top:40px;padding-bottom:28px}
+
+/* ================= 共感（こんな方へ） ================= */
+.ev-for{background:var(--blue-pale2)}
+.ev-for .list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:880px;margin:0 auto}
+.ev-for .item{background:#fff;border-radius:18px;padding:20px 22px 20px 58px;position:relative;box-shadow:var(--shadow-s);font-weight:700;font-size:16.5px}
+.ev-for .item:before{content:"✓";position:absolute;left:18px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900}
+
+/* ================= 3つの体験 ================= */
+.ev-act .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+/* 当日の流れ（タイムライン） */
+.ev-flow2{background:linear-gradient(180deg,var(--blue-pale2),#fff)}
+.flowline{max-width:820px;margin:0 auto;list-style:none;position:relative;padding:0}
+.flowline:before{content:"";position:absolute;left:25px;top:12px;bottom:14px;width:4px;border-radius:4px;background:repeating-linear-gradient(var(--blue) 0 12px,transparent 12px 22px)}
+.fstep{position:relative;padding:0 0 22px 72px;min-height:54px}
+.fstep:last-child{padding-bottom:0}
+.fnum{position:absolute;left:0;top:0;width:54px;height:54px;border-radius:50%;background:var(--blue);color:#fff;font-family:"Fredoka",sans-serif;font-weight:700;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px rgba(21,179,238,.28);z-index:1}
+.fstep:nth-child(2) .fnum{background:var(--orange);box-shadow:0 6px 14px rgba(252,164,0,.28)}
+.fstep:nth-child(3) .fnum{background:var(--pink);box-shadow:0 6px 14px rgba(230,27,100,.28)}
+.fstep:nth-child(4) .fnum{background:var(--green-d);box-shadow:0 6px 14px rgba(127,174,0,.28)}
+.fcard{background:#fff;border-radius:18px;padding:18px 22px;box-shadow:var(--shadow-s)}
+.fcard h3{font-size:19px;font-weight:800;margin-bottom:5px;line-height:1.45}
+.fcard p{font-size:14.5px;color:#555}
+.fcard.with-photo{display:grid;grid-template-columns:210px 1fr;gap:20px;padding:16px;align-items:center}
+.fphoto{position:relative}
+.fphoto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block}
+.ftag{position:absolute;left:8px;top:8px;font-size:12px;font-weight:800;color:#fff;padding:3px 11px;border-radius:50px;box-shadow:var(--shadow-s)}
+.ftag.child{background:var(--blue)} .ftag.parent{background:var(--pink)}
+.flow-note{text-align:center;color:var(--gray);font-size:13px;margin-top:18px}
+/* 同時進行（並列トラック） */
+.fcard.fparallel{padding:18px}
+.fpar-head{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;margin-bottom:14px}
+.fpar-head h3{margin:0}
+.fpar-badge{background:#fff4d6;color:#b8740a;font-weight:800;font-size:12.5px;padding:6px 14px;border-radius:50px;border:1px solid #ffd98a}
+.ftracks{display:grid;grid-template-columns:1fr;gap:16px}
+.ftrack{border-radius:14px;padding:14px}
+.ftrack.parent{background:#fdeef4}
+.ftrack-label{display:inline-block;font-size:12px;font-weight:800;color:#fff;padding:3px 13px;border-radius:50px;margin-bottom:10px}
+.ftrack.parent .ftrack-label{background:var(--pink)}
+/* お子さま：2枚を横並び（上段） */
+.ftrack.child{background:var(--blue-pale2);display:flex;flex-wrap:wrap;gap:14px}
+.ftrack.child .ftrack-label{flex-basis:100%;background:var(--blue);margin-bottom:0}
+.ftrack.child .fmini{flex:1 1 calc(50% - 7px);min-width:0}
+.fmini{background:#fff;border-radius:12px;padding:12px;box-shadow:var(--shadow-s)}
+.fmini img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block;margin-bottom:10px}
+.fmini h4{font-size:16px;font-weight:800;margin-bottom:4px;line-height:1.45}
+.fmini p{font-size:13.5px;color:#555;line-height:1.7}
+/* イベントリード（FLOW前） */
+.ev-eventlead{padding:46px 0 0}
+.event-lead{max-width:820px;margin:0 auto;text-align:center;font-size:17px;font-weight:600;color:#33576a;line-height:1.9}
+.event-lead b{color:var(--pink)}
+.event-note{max-width:760px;margin:20px auto 0;text-align:center;font-size:15px;line-height:1.8;color:#8a5a10;background:#fff6e5;border:1px solid #ffe1a8;border-radius:14px;padding:15px 22px}
+.event-note b{color:var(--pink)}
+@media(max-width:680px){ .event-note{font-size:13.5px;padding:13px 15px;margin-top:16px} }
+.event-lead .br-sp{display:none}
+@media(max-width:680px){ .event-lead .br-sp{display:inline} .event-lead .br-pc{display:none} }
+/* 完成カード（FLOW step3） */
+.fdone{display:block}
+.fdone-imgs{margin-bottom:10px}
+.fdone-imgs img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block}
+.fdone h3{margin:0 0 4px}
+.fdone .fdone-eat{margin:2px 0 0;font-size:14.5px;font-weight:400;color:#555;line-height:1.7}
+/* 明光キッズeのご紹介（ABOUT） */
+.ev-about{background:#fff}
+.about-gallery{max-width:760px;margin:34px auto 0}
+.ag-label{text-align:center;font-weight:800;color:var(--blue-d);font-size:15px;margin:0 0 12px}
+.ag-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;box-shadow:var(--shadow)}
+.ag-track::-webkit-scrollbar{display:none}
+.ag-slide{flex:0 0 100%;scroll-snap-align:center}
+.ag-slide img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.ag-dots{display:flex;gap:8px;justify-content:center;margin-top:14px}
+.ag-dots button{width:9px;height:9px;border-radius:50%;border:none;background:#cfe0e8;cursor:pointer;padding:0;transition:width .2s,background .2s}
+.ag-dots button.on{background:var(--blue);width:22px;border-radius:5px}
+.about-text{max-width:800px;margin:0 auto 30px;text-align:center;color:#444;font-size:15.5px;line-height:1.95}
+.about-text p{margin:0 0 12px}
+.five-e-title{text-align:center;font-size:18px;font-weight:800;margin:0 0 20px}
+.five-e-title b{color:var(--pink)}
+.five-e{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;max-width:1000px;margin:0 auto}
+.e-item{background:var(--blue-pale2);border-radius:16px;padding:20px 14px;text-align:center}
+.e-item .e-en{display:block;font-family:"Fredoka",sans-serif;font-weight:700;font-size:19px;color:var(--blue-d);margin-bottom:8px}
+.e-item:nth-child(2) .e-en{color:var(--orange-d)}
+.e-item:nth-child(3) .e-en{color:var(--pink)}
+.e-item:nth-child(4) .e-en{color:var(--green-d)}
+.e-item:nth-child(5) .e-en{color:#9b59b6}
+.e-item p{font-size:14px;color:#444;line-height:1.65;margin:0}
+.about-link{text-align:center;margin-top:26px}
+.about-link a{color:var(--blue-d);font-weight:700;text-decoration:none;font-size:14px}
+/* スクールカード：電話するボタン＋地図埋め込み */
+.ev-scard .tel-link{color:var(--blue-d);font-weight:800;text-decoration:none;border-bottom:1px dotted currentColor}
+.ev-scard:nth-child(2) .tel-link{color:var(--orange-d)}
+.ev-scard:nth-child(3) .tel-link{color:var(--pink)}
+.ev-scard .map-embed{width:100%;height:170px;border:0;border-radius:12px;margin-top:14px;display:block}
+@media(max-width:680px){
+  .five-e{grid-template-columns:1fr 1fr}
+  .five-e .e-item:last-child{grid-column:1/3}
+  .event-lead{font-size:15.5px}
+  .fdone{grid-template-columns:1fr;gap:10px}
+  .fdone-imgs{justify-content:flex-start}
+  .fdone-imgs img{max-width:100%}
+  .ev-scard .map-embed{height:200px}
+}
+.fmini .uchiwa2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.fmini .uchiwa2 img{width:100%;aspect-ratio:3/4;object-fit:contain;background:#fff;border-radius:10px;margin-bottom:0;display:block}
+/* 保護者：1枚を横長カード（下段） */
+.ftrack.parent .fmini{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:center}
+.ftrack.parent .fmini img{margin-bottom:0;aspect-ratio:4/3}
+@media(max-width:680px){
+  .ftrack.child{display:block}
+  .ftrack.child .fmini{margin-bottom:12px}
+  .ftrack.child .fmini:last-child{margin-bottom:0}
+  .ftrack.parent .fmini{grid-template-columns:1fr;gap:0}
+  .ftrack.parent .fmini img{margin-bottom:10px;aspect-ratio:16/10}
+}
+@media(max-width:680px){
+  .fstep{padding-left:56px;padding-bottom:18px}
+  .fnum{width:44px;height:44px;font-size:20px}
+  .flowline:before{left:20px}
+  .fcard.with-photo{grid-template-columns:1fr;gap:12px;padding:14px}
+  .fphoto img{aspect-ratio:16/9}
+}
+.ev-card{background:#fff;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:2px solid #f0f0f0;display:flex;flex-direction:column}
+.ev-card .ph{aspect-ratio:4/3;object-fit:cover;width:100%}
+.ev-card .body{padding:22px 22px 26px;flex:1;display:flex;flex-direction:column}
+.ev-card .no{align-self:flex-start;font-family:"Fredoka",sans-serif;font-weight:700;color:#fff;background:var(--blue);
+  width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;margin:-44px 0 12px;position:relative;box-shadow:var(--shadow-s);border:3px solid #fff}
+.ev-card:nth-child(2) .no{background:var(--orange)} .ev-card:nth-child(3) .no{background:var(--pink)}
+.ev-card h3{font-size:21px;font-weight:900;margin-bottom:4px}
+.ev-card .en{font-family:"Fredoka",sans-serif;font-size:13px;color:var(--blue);font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:10px}
+.ev-card:nth-child(2) .en{color:var(--orange-d)} .ev-card:nth-child(3) .en{color:var(--pink)}
+.ev-card p{font-size:15px;color:#444}
+
+/* ================= 当日の流れ ================= */
+.ev-flow{background:linear-gradient(180deg,#fff,var(--blue-pale2))}
+.ev-timeline{max-width:760px;margin:0 auto;position:relative}
+.ev-timeline:before{content:"";position:absolute;left:27px;top:8px;bottom:30px;width:4px;background:repeating-linear-gradient(var(--blue) 0 10px,transparent 10px 18px)}
+.ev-step{position:relative;padding:0 0 26px 76px;min-height:64px}
+.ev-step .dot{position:absolute;left:0;top:0;width:56px;height:56px;border-radius:50%;background:var(--blue);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 6px 14px rgba(21,179,238,.3);z-index:1}
+.ev-step:nth-child(2) .dot{background:var(--orange);box-shadow:0 6px 14px rgba(252,164,0,.3)}
+.ev-step:nth-child(3) .dot{background:var(--pink);box-shadow:0 6px 14px rgba(230,27,100,.3)}
+.ev-step:nth-child(4) .dot{background:var(--green-d)}
+.ev-step .card{background:#fff;border-radius:16px;padding:16px 20px;box-shadow:var(--shadow-s)}
+.ev-step h4{font-size:18px;font-weight:800;margin-bottom:3px}
+.ev-step p{font-size:14.5px;color:#555}
+.ev-step .split{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.ev-step .split div{border-radius:12px;padding:10px 12px;font-size:14px;font-weight:700}
+.ev-step .split .c{background:var(--blue-pale)} .ev-step .split .p{background:#ffe9c2}
+.ev-flow .note{text-align:center;color:var(--gray);font-size:13px;margin-top:6px}
+
+/* ================= うちわ作りって？ ================= */
+.ev-uchiwa{background:#fff}
+.ev-uchiwa .inner{display:grid;grid-template-columns:1.05fr 1fr;gap:36px;align-items:center;max-width:980px;margin:0 auto}
+.ev-uchiwa .txt h3{font-size:25px;font-weight:900;line-height:1.45;margin-bottom:12px}
+.ev-uchiwa .txt h3 em{color:var(--pink);font-style:normal}
+.ev-uchiwa .txt p{color:#444}
+.ev-uchiwa .pics{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative}
+.ev-uchiwa .pics img{border-radius:18px;box-shadow:var(--shadow-s);background:#f6fbff}
+.ev-uchiwa .pics .big{grid-column:1/3;aspect-ratio:16/10;object-fit:cover}
+.imgnote{display:inline-block;color:#999;font-size:11px;padding:0;margin-top:6px}
+
+/* ===== なぜしゅわしゅわ（SCIENCE）＆ 得られる学び（LEARNING） ===== */
+.ev-science{background:#fff}
+.sci-lead{position:relative;max-width:760px;margin:0 auto 26px;text-align:center;font-size:16.5px;font-weight:700;line-height:1.9;color:#33576a;background:#fff;border:2px solid var(--blue);border-radius:20px;padding:16px 26px;box-shadow:var(--shadow-s)}
+.sci-lead::before,.sci-lead::after{content:"";position:absolute;top:50%;transform:translateY(-50%);width:0;height:0;border-style:solid}
+.sci-lead::before{right:-19px;border-width:12px 0 12px 19px;border-color:transparent transparent transparent var(--blue)}
+.sci-lead::after{right:-15px;border-width:9px 0 9px 15px;border-color:transparent transparent transparent #fff}
+.sci-lead b{color:var(--pink)}
+.sci-secret{max-width:860px;margin:0 auto 34px;display:flex;gap:26px;align-items:center}
+.sci-foam{flex:0 0 240px}
+.sci-intro{max-width:900px;margin:0 auto 44px;display:flex;align-items:center;justify-content:center;gap:20px}
+.sci-intro .sci-lead{margin:0;flex:0 1 auto}
+.sci-staff{flex:0 0 175px}
+.sci-staff img{width:100%;display:block}
+.sci-foam img{width:100%;border-radius:16px;display:block;aspect-ratio:1/1;object-fit:cover;box-shadow:var(--shadow)}
+.sci-secret-in{position:relative;flex:1;background:repeating-linear-gradient(#fff 0 26px,rgba(41,182,232,.10) 26px 28px);border:1.5px solid var(--blue);border-radius:8px;padding:24px 28px;text-align:center;box-shadow:var(--shadow-s)}
+.sci-secret-in::before{content:"";position:absolute;top:0;bottom:0;left:34px;width:2px;background:rgba(225,93,93,.15)}
+.sci-secret-in p{margin:0 0 8px;font-size:15.5px;line-height:1.85}
+.sci-secret-in p:last-child{margin:0}
+.sci-secret-in b{color:var(--blue-d);white-space:nowrap}
+.nb{white-space:nowrap}
+.sci-lead,.sci-bridge,.sci-secret-in p{word-break:auto-phrase;text-wrap:pretty}
+.sci-co2{font-size:17px!important;font-weight:800}
+.sci-co2 b{color:var(--pink)!important}
+.sci-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:900px;margin:0 auto 26px}
+.sci-step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 20px 20px;text-align:center;box-shadow:var(--shadow)}
+.sci-no{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;font-weight:900;font-size:20px;margin-bottom:12px}
+.sci-step:nth-child(2) .sci-no{background:var(--orange)}
+.sci-step:nth-child(3) .sci-no{background:var(--pink)}
+.sci-step h4{margin:0 0 8px;font-size:16px}
+.sci-step p{margin:0;font-size:13.8px;color:#666;line-height:1.75}
+.sci-close{text-align:center;font-size:16px;font-weight:800;color:var(--blue-d);margin:0}
+.sci-bridge{max-width:860px;margin:0 auto;text-align:center;font-size:16px;font-weight:800;line-height:1.9;color:var(--blue-d)}
+.sci-bridge b{color:var(--pink)}
+.sci-trivia{max-width:760px;margin:0 auto 26px;background:var(--cream);border-radius:16px;padding:20px 24px;text-align:center;box-shadow:var(--shadow)}
+.trivia-badge{display:inline-block;background:var(--orange);color:#fff;font-weight:800;font-size:13px;padding:5px 14px;border-radius:50px;margin-bottom:12px}
+.sci-trivia p{margin:0;font-size:15px;line-height:1.85;color:#444}
+.sci-trivia b{color:var(--pink)}
+.ev-learning{background:var(--blue-pale2)}
+.learn-box{max-width:720px;margin:0 auto;background:#fff;border-radius:20px;padding:32px 34px;box-shadow:var(--shadow);text-align:center}
+.learn-lead{font-size:16px;font-weight:700;margin:0 0 12px;line-height:1.85}
+.learn-box p{font-size:15px;line-height:1.85;margin:0 0 12px;color:#444}
+.learn-box b{color:var(--pink)}
+.learn-quotes{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:18px 0}
+.lq{background:var(--blue-pale);color:var(--blue-d);font-weight:800;font-size:16px;padding:10px 20px;border-radius:50px}
+.learn-close{font-size:16.5px!important;font-weight:800;color:#333!important;margin:8px 0 0!important}
+.learn-close b{color:var(--pink)}
+@media(max-width:760px){ .sci-steps{grid-template-columns:1fr;gap:14px} .sci-secret{flex-direction:column;gap:16px;margin:0 16px 30px} .sci-foam{flex:none;width:100%;max-width:260px;margin:0 auto;order:2} .sci-secret-in{padding:22px 18px} .sci-intro{flex-direction:column;gap:0;padding:0 12px;align-items:stretch} .sci-staff{flex:0 0 auto;width:124px;align-self:flex-end;margin-top:6px} .learn-box{padding:24px 18px;margin:0 16px} .sci-lead{font-size:15px;padding:14px 18px} .sci-lead::before{right:30px;top:auto;bottom:-19px;transform:none;border-width:19px 12px 0 12px;border-color:var(--blue) transparent transparent transparent} .sci-lead::after{right:33px;top:auto;bottom:-15px;transform:none;border-width:15px 9px 0 9px;border-color:#fff transparent transparent transparent} .sci-bridge{font-size:15px;padding:0 16px} .sci-secret-in p{font-size:15px} .sci-co2{font-size:16px!important} }
+
+/* ================= 開催概要 ================= */
+.ev-outline{background:var(--cream)}
+.ev-table{max-width:820px;margin:0 auto;background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:2px solid #fff}
+.ev-table dl{display:flex;border-bottom:1px solid var(--line)}
+.ev-table dl:last-child{border-bottom:none}
+.ev-table dt{width:170px;flex-shrink:0;background:var(--blue-pale);color:#0e6f96;font-weight:800;padding:18px 22px;font-size:15px;display:flex;align-items:center}
+.ev-table dd{padding:18px 22px;font-size:15.5px}
+/* スクール開始時間：PCは1行（／区切り）、スマホは校舎ごとに改行（／非表示） */
+@media(max-width:680px){
+  .sch-times .sch{display:block}
+  .sch-times .sep{display:none}
+}
+.ev-table dd b{color:var(--pink);font-weight:800}
+.ev-table dd .free{color:var(--orange);font-weight:900}
+
+/* ================= スクール別 ================= */
+.ev-school .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ev-scard{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:2px solid #f0f0f0}
+.ev-scard .top{padding:16px;color:#fff;text-align:center}
+.ev-scard:nth-child(1) .top{background:var(--blue)} .ev-scard:nth-child(2) .top{background:var(--orange)} .ev-scard:nth-child(3) .top{background:var(--pink)}
+.ev-scard .top .nm{font-size:22px;font-weight:900}
+.ev-scard .top .tm{font-size:15px;font-weight:700;margin-top:2px;opacity:.95}
+.ev-scard .b{padding:18px 20px 22px}
+.ev-scard .row{display:flex;gap:8px;font-size:14px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.ev-scard .row .lb{flex-shrink:0;font-weight:800;color:var(--blue-d);width:4.6em;white-space:nowrap}
+.ev-scard:nth-child(2) .row .lb{color:var(--orange-d)} .ev-scard:nth-child(3) .row .lb{color:var(--pink)}
+.ev-scard .acts{display:flex;gap:8px;margin-top:14px}
+.ev-scard .acts a{flex:1;text-align:center;text-decoration:none;font-weight:800;font-size:14px;padding:11px 6px;border-radius:12px}
+.ev-scard .acts .tel{background:var(--blue);color:#fff} .ev-scard:nth-child(2) .acts .tel{background:var(--orange)} .ev-scard:nth-child(3) .acts .tel{background:var(--pink)}
+.ev-scard .acts .map{background:#eef6fb;color:#0e6f96}
+
+/* ================= ギャラリー ================= */
+.ev-gallery{background:var(--blue-pale2)}
+.ev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1000px;margin:0 auto}
+.ev-grid img{aspect-ratio:1;object-fit:cover;border-radius:14px;box-shadow:var(--shadow-s)}
+.ev-grid img:nth-child(1),.ev-grid img:nth-child(6){grid-column:span 2;grid-row:span 2;aspect-ratio:auto;height:100%}
+
+/* 雰囲気フォトバンド／フォトウォール（ギャラリー写真・見出しなし） */
+.ev-band{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px}
+.ev-band.wall{grid-auto-flow:row;grid-template-columns:repeat(5,1fr)}
+.ev-band img{width:100%;height:clamp(150px,17vw,240px);object-fit:cover;display:block}
+@media(max-width:680px){
+  .ev-band{grid-auto-columns:46%;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
+  .ev-band img{height:42vw;scroll-snap-align:start}
+  .ev-band.wall{grid-template-columns:repeat(2,1fr);overflow:visible}
+  .ev-band.wall img{height:42vw;scroll-snap-align:none}
+}
+
+/* ================= 申込CTA ================= */
+.ev-entry{background:linear-gradient(160deg,var(--blue) 0%,#0e9fd6 100%);color:#fff;text-align:center;position:relative}
+.ev-entry:before{content:"";position:absolute;top:0;left:0;right:0;height:40px;background:#fff;
+  -webkit-mask:radial-gradient(22px at 22px 0,#0000 98%,#000) repeat-x;mask:radial-gradient(22px at 22px 0,#0000 98%,#000) repeat-x;mask-size:44px 44px}
+.ev-entry .en{font-family:"Fredoka",sans-serif;font-weight:700;font-size:50px;opacity:.95}
+.ev-entry h2{font-size:27px;font-weight:900;margin:6px 0 8px}
+.ev-entry .lead{font-size:16px;opacity:.95;margin-bottom:26px}
+.ev-entry .panel{background:#fff;color:var(--ink);max-width:720px;margin:0 auto;border-radius:24px;padding:32px 28px;box-shadow:0 18px 40px rgba(0,0,0,.18);text-align:left}
+.ev-entry .panel .big-cta{text-align:center;margin-bottom:22px}
+.ev-entry .panel .or{text-align:center;color:var(--gray);font-weight:800;margin:18px 0 12px;position:relative}
+.ev-entry .tellist{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.ev-entry .tellist a{display:flex;flex-direction:column;text-decoration:none;border:2px solid var(--blue-pale);border-radius:14px;padding:12px 14px}
+.ev-entry .tellist a .nm{font-size:13px;color:var(--gray);font-weight:800}
+.ev-entry .tellist a .no{font-size:21px;font-weight:900;color:var(--blue-d)}
+.ev-entry .reqs{background:var(--cream);border-radius:14px;padding:16px 18px;margin-top:20px;font-size:14px}
+.ev-entry .reqs .t{font-weight:900;margin-bottom:6px;color:var(--ink)}
+.ev-entry .reqs b{color:var(--pink)}
+.ev-entry .recep{font-size:12.5px;color:var(--gray);margin-top:10px;text-align:center}
+
+/* ================= 注意事項 ================= */
+.ev-notes{background:#fff;padding:34px 0}
+.ev-notes ul{max-width:820px;margin:0 auto;background:var(--cream);border-radius:16px;padding:22px 26px;list-style:none}
+.ev-notes li{position:relative;padding-left:20px;font-size:14px;color:#555;margin:6px 0}
+.ev-notes li:before{content:"※";position:absolute;left:0;color:var(--pink);font-weight:800}
+
+/* ================= 固定CTA（スマホ下部） ================= */
+.ev-fixcta{position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;gap:0;background:rgba(255,255,255,.96);
+  box-shadow:0 -4px 16px rgba(0,0,0,.12);padding:8px;backdrop-filter:blur(4px)}
+.ev-fixcta a{flex:1;text-align:center;text-decoration:none;font-weight:900;padding:13px 6px;border-radius:14px;font-size:15px;margin:0 4px}
+.ev-fixcta .form{background:var(--orange);color:#fff;box-shadow:0 4px 0 var(--orange-d)}
+.ev-fixcta .tel{background:var(--blue);color:#fff;box-shadow:0 4px 0 var(--blue-d);display:flex;flex-direction:column;line-height:1.2}
+.ev-fixcta .tel small{font-size:10px;font-weight:700;opacity:.9}
+
+/* ================= レスポンシブ ================= */
+@media (max-width:880px){
+  .ev-act .cards,.ev-school .cards{grid-template-columns:1fr;max-width:440px;margin:0 auto}
+  .ev-uchiwa .inner{grid-template-columns:1fr;gap:22px}
+  .ev-grid{grid-template-columns:repeat(2,1fr)}
+  .ev-grid img:nth-child(1),.ev-grid img:nth-child(6){grid-column:span 2;grid-row:auto;aspect-ratio:16/9}
+}
+@media (max-width:680px){
+  .ev{font-size:15px}
+  .ev-sec{padding:50px 0}
+  .ev-head .en{font-size:40px} .ev-head h2{font-size:22px}
+  .ev-hero{padding:72px 0 56px}
+  .ev-hero h1{font-size:31px} .ev-hero .sub{font-size:15px} .ev-hero .sp-br{display:inline}
+  .ev-hero .brandbar img{height:46px}
+  .ev-hero .hero-photo .fan{width:78px;right:-6px;bottom:-16px}
+  .ev-hero .hero-photo .pop{width:74px;height:74px;font-size:11px}
+  .ev-for .list{grid-template-columns:1fr}
+  .ev-badges .b{flex:1 1 46%;min-width:0}
+  .ev-table dl{flex-direction:column}
+  .ev-table dt{width:100%;padding:12px 18px}
+  .ev-table dd{padding:12px 18px}
+  .ev-step .split{grid-template-columns:1fr}
+  .ev-entry .tellist{grid-template-columns:1fr}
+  .ev-entry .en{font-size:38px} .ev-entry h2{font-size:21px}
+  .ev-fixcta{display:flex}
+  .ev-foot-space{height:76px}
+}
+</style>
+</head>
+<body class="ev">
+
+<!-- ============ ヘッダー（公式サイトを踏襲） ============ -->
+<header>
+	<div class="logo-list">
+		<div class="logos">
+			<p class="logo"><a href="https://www.meikokids.jp/meikokidse/"><img src="./images/common/logo2.png" alt="明光キッズe（Meiko Kids e）" width="348" height="120"></a></p>
+		</div>
+	</div>
+	<div class="header-info">
+		<ul class="fix-sp">
+			<li><a class="i-mail" href="https://www.meikokids.jp/contact/"><span class="icon">お申し込みは<br>こちら</span></a></li>
+		</ul>
+	</div>
+	<a class="ev-sp-cta" href="https://www.meikokids.jp/contact/" target="_blank" rel="noopener">お申し込み<br>はこちら</a>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="ev-hero">
+  <div class="confetti bubbles">
+    <i style="left:5%;top:26%;width:22px;height:22px;background:#15B3EE"></i>
+    <i style="left:9%;top:54%;width:12px;height:12px;background:#FCA400;animation-delay:1.6s"></i>
+    <i style="left:14%;top:74%;width:18px;height:18px;background:#9BC714;animation-delay:.8s"></i>
+    <i style="left:3%;top:66%;width:10px;height:10px;background:#E61B64;animation-delay:2.4s"></i>
+    <i style="left:21%;top:42%;width:14px;height:14px;background:#15B3EE;animation-delay:3.1s"></i>
+    <i style="left:88%;top:22%;width:20px;height:20px;background:#E61B64;animation-delay:.4s"></i>
+    <i style="left:93%;top:50%;width:12px;height:12px;background:#15B3EE;animation-delay:2s"></i>
+    <i style="left:84%;top:68%;width:16px;height:16px;background:#FCA400;animation-delay:1.2s"></i>
+    <i style="left:96%;top:72%;width:9px;height:9px;background:#9BC714;animation-delay:3.4s"></i>
+    <i style="left:79%;top:36%;width:13px;height:13px;background:#9BC714;animation-delay:2.7s"></i>
+    <i style="left:73%;top:80%;width:11px;height:11px;background:#E61B64;animation-delay:.9s"></i>
+    <i style="left:28%;top:84%;width:15px;height:15px;background:#FCA400;animation-delay:1.9s"></i>
+  </div>
+  <div class="ev-wrap">
+    <h1><span class="nb">この夏、</span><wbr><span class="nb uchiwa">英語に触れながら</span><br class="sp-br"><span class="nb">しゅわしゅわ</span><wbr><span class="nb">ラムネを</span><wbr><span class="nb">作ろう！</span></h1>
+
+    <div class="hero-photo trio">
+      <figure class="shot main">
+        <img src="./event-img/kids-ramune.jpg" alt="できた小さなラムネを見せて笑顔の子ども">
+      </figure>
+      <figure class="shot r1">
+        <img src="./event-img/hero.jpg" alt="ネイティブティーチャーと英語を楽しむ子どもたち">
+      </figure>
+      <figure class="shot r2">
+        <img src="./event-img/ramune-making.jpg" alt="しゅわしゅわのラムネを手作りする子ども">
+      </figure>
+    </div>
+
+    <div class="ev-badges">
+      <div class="b"><div class="k">開催日</div><div class="v"><b>8/22</b><span style="font-size:14px">(土)</span></div></div>
+      <div class="b"><div class="k">対象</div><div class="v">幼児〜小学生</div></div>
+      <div class="b"><div class="k">参加費</div><div class="v"><span class="free">無料</span></div></div>
+      <div class="b"><div class="k">定員</div><div class="v">各校<b>6</b>名</div></div>
+    </div>
+    <p class="ev-schools-line">開催校：<b>下井草校・北砂校・あざみ野校</b></p>
+
+    <div class="cta-row">
+      <a class="ev-btn" href="https://www.meikokids.jp/contact/" target="_blank" rel="noopener">お申し込みはこちら</a>
+      <span class="cta-note">お電話でも受付中　／　<a href="tel:03-5332-5231" style="color:#0e6f96;font-weight:800">03-5332-5231</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ なぜしゅわしゅわ（実験のひみつ） ============ -->
+<section class="ev-sec ev-science">
+  <div class="ev-wrap">
+    <div class="sci-intro">
+      <p class="sci-lead"><span class="nb">自分で作ったラムネが、</span><wbr><span class="nb">しゅわしゅわ——</span><br><span class="nb">そこには、</span><wbr><span class="nb">小さな <b>科学のふしぎ</b> が</span><wbr><span class="nb">かくれています。</span></p>
+      <div class="sci-staff"><img src="./event-img/staff-point.webp" alt="明光キッズeのスタッフが解説を指し示すようす" loading="lazy"></div>
+    </div>
+    <div class="sci-secret">
+      <div class="sci-foam"><img src="./event-img/co2-foam.jpg" alt="ガラスの器にもられたカラフルなお菓子のラムネ" loading="lazy"></div>
+      <div class="sci-secret-in">
+        <p class="sci-co2"><span class="nb">あの "しゅわしゅわ" の</span><wbr><span class="nb">正体は、<b>二酸化炭素（CO₂）</b>。</span></p>
+        <p><span class="nb">ラムネにふくまれる </span><wbr><span class="nb"><b>重曹（じゅうそう）</b> と </span><wbr><span class="nb"><b>クエン酸</b> が、</span><wbr><span class="nb">水分にとけて</span><wbr><span class="nb">生まれるガスです。</span></p>
+        <p><span class="nb">口の中では、</span><wbr><span class="nb">しゅわしゅわ。</span><wbr><span class="nb"> <b>炭酸水</b> に入れれば——</span><wbr><span class="nb">勢いよく泡が</span><wbr><span class="nb">吹き出します。</span></p>
+        <p><span class="nb">ちなみに——</span><wbr><span class="nb">あの <b>しゅわしゅわ</b>、</span><wbr><span class="nb">じつは「味」では</span><wbr><span class="nb">ありません。</span><wbr><span class="nb">舌が感じているのは </span><wbr><span class="nb"><b>"刺激"</b>——</span><wbr><span class="nb">なんと、</span><wbr><span class="nb">唐辛子やわさびの</span><wbr><span class="nb">「辛さ」と</span><wbr><span class="nb">同じ神経（三叉神経）で</span><wbr><span class="nb">受け取っているんです。</span></p>
+      </div>
+    </div>
+    <p class="sci-bridge"><span class="nb">この "しゅわしゅわ" を、</span><wbr><span class="nb">実際に </span><wbr><b><span class="nb">明光義塾が提供する</span><wbr><span class="nb">アフタースクール</span><wbr><span class="nb">「明光キッズe」</span></b><wbr><span class="nb"> で体験します。</span></p>
+  </div>
+</section>
+
+<!-- ============ 得られる学び ============ -->
+<section class="ev-sec ev-learning">
+  <div class="ev-wrap">
+    <div class="ev-head">
+      <span class="en p">LEARNING</span>
+      <h2>この体験で得られる学び</h2>
+      <span class="deco-line"></span>
+    </div>
+    <div class="learn-box">
+      <p class="learn-lead">ネイティブティーチャーと一緒に、スクールで毎日行っている <b>「English Fun Time」</b> を体験します。</p>
+      <p>オールイングリッシュの環境で、遊びながら英語を体感——</p>
+      <div class="learn-quotes"><span class="lq">英語って楽しい！</span><span class="lq">もっと学びたい！</span></div>
+      <p>と、英語に<b>親しみを持てるきっかけに！</b></p>
+      <p>さらにアクティビティを通じて、理科のふしぎにも自分の目・手・味覚で触れ、<b>「理科ってたのしい！」「知るっておもしろい！」</b>と、</p>
+      <p class="learn-close">お子さまの <b>知的好奇心・探究心</b> が広がる機会です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 当日の流れ ============ -->
+<section class="ev-sec ev-flow2">
+  <div class="ev-wrap">
+    <div class="ev-head">
+      <span class="en o">FLOW</span>
+      <h2>当日の流れ</h2>
+      <span class="deco-line"></span>
+    </div>
+    <ol class="flowline">
+      <li class="fstep">
+        <span class="fnum">1</span>
+        <div class="fcard">
+          <h3>受付・導入</h3>
+        </div>
+      </li>
+      <li class="fstep">
+        <span class="fnum">2</span>
+        <div class="fcard fparallel">
+          <div class="fpar-head">
+            <h3>体験スタート</h3>
+          </div>
+          <div class="ftracks">
+            <div class="ftrack child">
+              <div class="fmini">
+                <img src="./event-img/act-native.jpg" alt="ネイティブと英語を楽しむ体験">
+                <div>
+                  <h4>ネイティブと「英語を楽しむ」体験！</h4>
+                  <p>ネイティブティーチャーといっしょに、ゲームやコミュニケーションあそびにチャレンジ。英語がはじめてでも大丈夫、「楽しい！」から始めます。</p>
+                </div>
+              </div>
+              <div class="fmini">
+                <img src="./event-img/ramune-boy.jpg" alt="しゅわしゅわのラムネを観察する子ども">
+                <div>
+                  <h4>ラムネの理科実験</h4>
+                  <p>しゅわしゅわのラムネを手作り！ゼリーに入れて炭酸のしゅわしゅわを観察したり、カラフルなゼリーポンチも作ります。「なんで泡が出るの？」を楽しく体験。</p>
+                </div>
+              </div>
+            </div>
+            <div class="ftrack parent">
+              <div class="fmini">
+                <img src="./event-img/staff-briefing.jpg" alt="保護者向け説明会">
+                <div>
+                  <h4>保護者向け説明会</h4>
+                  <p>スタッフが明光キッズeの学びや過ごし方について40分程度でご説明。説明会のあとは、質疑応答やお子さまの様子を見学いただけます。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="fstep">
+        <span class="fnum">3</span>
+        <div class="fcard fdone">
+          <div class="fdone-imgs">
+            <img src="./event-img/ramune-eating.jpg" alt="できたゼリーポンチを笑顔で食べる子ども">
+          </div>
+          <div>
+            <h3>完成</h3>
+            <p class="fdone-eat">作ったラムネとゼリーポンチを食べよう！</p>
+          </div>
+        </div>
+      </li>
+      <li class="fstep">
+        <span class="fnum">4</span>
+        <div class="fcard">
+          <h3>解散</h3>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 開催概要 ============ -->
+<section class="ev-sec ev-outline">
+  <div class="ev-wrap">
+    <div class="ev-head">
+      <span class="en">OUTLINE</span>
+      <h2>開催概要</h2>
+      <span class="deco-line"></span>
+    </div>
+    <div class="ev-table">
+      <dl><dt>開催日・時間</dt><dd><b>2026年8月22日（土）</b><br><span class="sch-times" style="font-size:14.5px"><span class="sch">下井草校 10:00〜11:30</span><span class="sep">　／　</span><span class="sch">北砂校 10:30〜12:00</span><span class="sep">　／　</span><span class="sch">あざみ野校 13:00〜14:30</span></span></dd></dl>
+      <dl><dt>会場</dt><dd>各スクール内（下井草・北砂・あざみ野）</dd></dl>
+      <dl><dt>対象</dt><dd>幼児〜小学生</dd></dl>
+      <dl><dt>定員</dt><dd>各校 <b>6名</b>（先着順）</dd></dl>
+      <dl><dt>参加費</dt><dd>無料</dd></dl>
+      <dl><dt>持ち物</dt><dd>特になし（食品を扱う実験のため、汚れてもよい服装がおすすめです）</dd></dl>
+      <dl><dt>保護者の同伴</dt><dd>同伴必須（保護者向けの集団説明会を開催します）</dd></dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 明光キッズeのご紹介 ============ -->
+<section class="ev-sec ev-about">
+  <div class="ev-wrap">
+    <div class="ev-head">
+      <span class="en p">ABOUT</span>
+      <h2>明光キッズeのご紹介</h2>
+      <span class="deco-line"></span>
+    </div>
+    <div class="about-text">
+      <p>明光キッズeは5つの「e」をもとに、子どもたちが無理なく生きた英語を身につけられる環境を提供しています。</p>
+      <p>遊びを取り入れたプログラムのほか、入室からおやつ、退室するまですべてのコミュニケーションを英語で行うことで、海外にいるのと同じような環境の中で英語漬けの生活を送ります。</p>
+      <p>「長所進展・ほめる教育」を基盤とし、子どもたちのチャレンジ精神や自己肯定感を高め、何事にも自信をもって取り組むことができる力を育てます。</p>
+    </div>
+    <p class="five-e-title">明光キッズeが大切にする<b>5つの「e」</b></p>
+    <div class="five-e">
+      <div class="e-item"><span class="e-en">english</span><p>オールイングリッシュの学童保育・プリスクール</p></div>
+      <div class="e-item"><span class="e-en">environment</span><p>子どもたちがいつでも安心して通える</p></div>
+      <div class="e-item"><span class="e-en">express</span><p>英語力だけではなく自分を表現する力が身につく</p></div>
+      <div class="e-item"><span class="e-en">experience</span><p>多彩なプログラムで個性を引き出す</p></div>
+      <div class="e-item"><span class="e-en">enjoy</span><p>楽しみながら生きた英語が身につく</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ スクール別情報 ============ -->
+<section class="ev-sec ev-school">
+  <div class="ev-wrap">
+    <div class="ev-head">
+      <span class="en o">SCHOOL</span>
+      <h2>開催スクール</h2>
+    </div>
+    <div class="cards">
+      <div class="ev-scard">
+        <div class="top"><div class="nm">下井草校</div><div class="tm">10:00〜11:30</div></div>
+        <div class="b">
+          <div class="row"><span class="lb">住所</span><span>東京都杉並区井草1丁目7番2号 アースライズ井草2階</span></div>
+          <div class="row"><span class="lb">アクセス</span><span>西武新宿線「下井草駅」北口より徒歩1分</span></div>
+          <div class="row"><span class="lb">TEL</span><span><a class="tel-link" href="tel:03-5382-8200">03-5382-8200</a></span></div>
+          <iframe class="map-embed" src="https://maps.google.com/maps?q=明光キッズe 下井草&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="ev-scard">
+        <div class="top"><div class="nm">北砂校</div><div class="tm">10:30〜12:00</div></div>
+        <div class="b">
+          <div class="row"><span class="lb">住所</span><span>東京都江東区北砂2-17-1 アリオ北砂モール内1F</span></div>
+          <div class="row"><span class="lb">アクセス</span><span>都営新宿線「西大島駅」より徒歩9分</span></div>
+          <div class="row"><span class="lb">TEL</span><span><a class="tel-link" href="tel:03-6666-1132">03-6666-1132</a></span></div>
+          <iframe class="map-embed" src="https://maps.google.com/maps?q=明光キッズe アリオ北砂&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="ev-scard">
+        <div class="top"><div class="nm">あざみ野校</div><div class="tm">13:00〜14:30</div></div>
+        <div class="b">
+          <div class="row"><span class="lb">住所</span><span>神奈川県横浜市青葉区あざみ野1丁目21-1 アートパレスあざみ野</span></div>
+          <div class="row"><span class="lb">アクセス</span><span>東急田園都市線・市営地下鉄ブルーライン「あざみ野駅」より徒歩5分</span></div>
+          <div class="row"><span class="lb">TEL</span><span><a class="tel-link" href="tel:045-909-3311">045-909-3311</a></span></div>
+          <iframe class="map-embed" src="https://maps.google.com/maps?q=明光キッズe あざみ野&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 申込CTA ============ -->
+<section class="ev-entry">
+  <div class="ev-sec ev-wrap">
+    <span class="en">ENTRY</span>
+    <h2>ご予約・お申し込み</h2>
+    <div class="panel">
+      <div class="big-cta">
+        <a class="ev-btn" href="https://www.meikokids.jp/contact/" target="_blank" rel="noopener">お申し込みはこちら</a>
+      </div>
+      <div class="or">― または お電話で ―</div>
+      <div class="tellist">
+        <a href="tel:03-5332-5231"><span class="nm">明光キッズ 本部代表</span><span class="no">03-5332-5231</span></a>
+        <a href="tel:03-5382-8200"><span class="nm">下井草校</span><span class="no">03-5382-8200</span></a>
+        <a href="tel:03-6666-1132"><span class="nm">北砂校</span><span class="no">03-6666-1132</span></a>
+        <a href="tel:045-909-3311"><span class="nm">あざみ野校</span><span class="no">045-909-3311</span></a>
+      </div>
+      <p class="recep">受付時間：平日 11:00〜19:00（土日祝はお休み）</p>
+      <div class="reqs">
+        <p style="margin:5px 0">※ 参加には事前のご予約が必要です。</p>
+        <p style="margin:5px 0">※ 定員に達し次第、受付を終了いたします。あらかじめご了承ください。</p>
+        <p style="margin:5px 0">※ 画像はイメージです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ フッター（公式サイトを踏襲） ============ -->
+<footer id="footer">
+	<div id="footer-info">
+		<div class="inner">
+			<nav class="nav-ft">
+				<div class="top">
+					<a href="https://www.meikonet.co.jp/ja/corporate.html" target="_blank">運営会社</a>
+					<a href="https://www.meikokids.jp/privacypolicy/">プライバシーポリシー</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</footer>
+
+
+<script>
+(function(){
+  var gs=document.querySelectorAll('.about-gallery');
+  for(var gi=0;gi<gs.length;gi++){ (function(g){
+    var track=g.querySelector('.ag-track'), slides=g.querySelectorAll('.ag-slide'), dots=g.querySelector('.ag-dots'), n=slides.length, i=0, timer, st;
+    for(var k=0;k<n;k++){ var b=document.createElement('button'); b.setAttribute('aria-label','写真 '+(k+1)); if(k===0)b.className='on';
+      (function(idx){ b.addEventListener('click',function(){ go(idx,true); }); })(k); dots.appendChild(b); }
+    var btns=dots.querySelectorAll('button');
+    function upd(){ for(var x=0;x<n;x++){ btns[x].className=(x===i?'on':''); } }
+    function go(idx,user){ i=(idx+n)%n; track.scrollTo({left:i*track.clientWidth,behavior:'smooth'}); upd(); if(user)reset(); }
+    function reset(){ clearInterval(timer); timer=setInterval(function(){ go(i+1); },4500); }
+    track.addEventListener('scroll',function(){ clearTimeout(st); st=setTimeout(function(){ var idx=Math.round(track.scrollLeft/track.clientWidth); if(idx!==i){ i=idx; upd(); } },100); });
+    reset();
+  })(gs[gi]); }
+})();
+</script>
+</body>
+</html>
