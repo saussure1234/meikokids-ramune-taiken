@@ -134,6 +134,8 @@
 .ev-hero .cta-note{font-size:13px;color:#33576a}
 .ev-hero .ev-schools-line{margin:16px auto 0;font-size:15px;color:#33576a;font-weight:600}
 .ev-hero .ev-schools-line b{color:var(--blue-d);font-weight:800}
+.ev-hero .ev-joint-note{margin:5px auto 0;font-size:12.5px;color:#5b7a88;font-weight:500;text-align:center}
+.joint-sub{display:inline-block;margin-top:4px;font-size:12.5px;color:#66707a;font-weight:500}
 /* フッターのリンクを中央揃え */
 #footer-info .inner{display:flex;justify-content:center;text-align:center}
 #footer-info .nav-ft{width:100%;text-align:center}
@@ -396,6 +398,9 @@
 .ev-scard .acts a{flex:1;text-align:center;text-decoration:none;font-weight:800;font-size:14px;padding:11px 6px;border-radius:12px}
 .ev-scard .acts .tel{background:var(--blue);color:#fff} .ev-scard:nth-child(2) .acts .tel{background:var(--orange)} .ev-scard:nth-child(3) .acts .tel{background:var(--pink)}
 .ev-scard .acts .map{background:#eef6fb;color:#0e6f96}
+.ev-schoollist .cards{grid-template-columns:repeat(2,1fr);gap:22px;max-width:860px;margin:0 auto}
+.ev-schoollist .ev-scard:nth-child(4) .top{background:var(--green-d)}
+.ev-schoollist .ev-scard:nth-child(4) .row .lb,.ev-schoollist .ev-scard:nth-child(4) .tel-link{color:var(--green-d)}
 
 /* ================= ギャラリー ================= */
 .ev-gallery{background:var(--blue-pale2)}
@@ -530,7 +535,8 @@
       <div class="b"><div class="k">参加費</div><div class="v"><span class="free">無料</span></div></div>
       <div class="b"><div class="k">定員</div><div class="v"><b>先着</b>順</div></div>
     </div>
-    <p class="ev-schools-line">会場：<b>明光キッズ 練馬駅前スクール</b>（直営5校 合同開催）</p>
+    <p class="ev-schools-line">会場：<b>明光キッズ 練馬駅前スクール</b></p>
+    <p class="ev-joint-note">※石神井公園、光が丘、平和台、富士見台との合同開催です</p>
 
     <div class="cta-row">
       <a class="ev-btn" href="https://www.meikokids.jp/contact/" target="_blank" rel="noopener">お申し込みはこちら</a>
@@ -658,7 +664,7 @@
     </div>
     <div class="ev-table">
       <dl><dt>開催日・時間</dt><dd><b>2026年8月22日（土）</b><br><span style="font-size:14.5px">体験会 10:00〜11:30（受付は開始15分前から）</span></dd></dl>
-      <dl><dt>会場</dt><dd>明光キッズ 練馬駅前スクール（直営5校 合同開催）</dd></dl>
+      <dl><dt>会場</dt><dd>明光キッズ 練馬駅前スクール<br><span class="joint-sub">※石神井公園、光が丘、平和台、富士見台との合同開催です</span></dd></dl>
       <dl><dt>対象</dt><dd>年少〜小学生</dd></dl>
       <dl><dt>定員</dt><dd><b>先着順</b>（定員に達し次第終了）</dd></dl>
       <dl><dt>参加費</dt><dd>無料</dd></dl>
@@ -723,6 +729,55 @@
           <div class="row"><span class="lb">アクセス</span><span>西武池袋線・都営大江戸線「練馬駅」より徒歩1分</span></div>
           <div class="row"><span class="lb">TEL</span><span><a class="tel-link" href="tel:03-3992-2665">03-3992-2665</a></span></div>
           <iframe class="map-embed" src="https://maps.google.com/maps?cid=6044454459914012253&hl=ja&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ スクール一覧（合同開催4校） ============ -->
+<section class="ev-sec ev-school ev-schoollist">
+  <div class="ev-wrap">
+    <div class="ev-head">
+      <span class="en g">SCHOOL</span>
+      <h2>スクール一覧</h2>
+      <p class="lead">本イベントは、下記<b>4校の合同開催</b>です。<br>会場は<b>明光キッズ 練馬駅前スクール</b>（1教室）となります。</p>
+    </div>
+    <div class="cards">
+      <div class="ev-scard">
+        <div class="top"><div class="nm">明光キッズ 石神井公園スクール</div></div>
+        <div class="b">
+          <div class="row"><span class="lb">住所</span><span>東京都練馬区石神井町4-6-3 ダイナシティ石神井公園1F</span></div>
+          <div class="row"><span class="lb">アクセス</span><span>西武池袋線「石神井公園駅」より徒歩2分</span></div>
+          <div class="row"><span class="lb">TEL</span><span><a class="tel-link" href="tel:03-5923-6461">03-5923-6461</a></span></div>
+          <iframe class="map-embed" src="https://maps.google.com/maps?q=東京都練馬区石神井町4-6-3&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="ev-scard">
+        <div class="top"><div class="nm">明光キッズ 光が丘スクール</div></div>
+        <div class="b">
+          <div class="row"><span class="lb">住所</span><span>東京都練馬区高松5-12-9 ボンソワール2F</span></div>
+          <div class="row"><span class="lb">アクセス</span><span>都営大江戸線「光が丘駅」より徒歩7分</span></div>
+          <div class="row"><span class="lb">TEL</span><span><a class="tel-link" href="tel:03-5923-6430">03-5923-6430</a></span></div>
+          <iframe class="map-embed" src="https://maps.google.com/maps?q=東京都練馬区高松5-12-9&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="ev-scard">
+        <div class="top"><div class="nm">明光キッズ 平和台駅前スクール</div></div>
+        <div class="b">
+          <div class="row"><span class="lb">住所</span><span>東京都練馬区北町6-32-2 長太郎平和台駅前ビル3F</span></div>
+          <div class="row"><span class="lb">アクセス</span><span>東京メトロ有楽町線「平和台駅」より徒歩1分</span></div>
+          <div class="row"><span class="lb">TEL</span><span><a class="tel-link" href="tel:03-6915-7866">03-6915-7866</a></span></div>
+          <iframe class="map-embed" src="https://maps.google.com/maps?q=東京都練馬区北町6-32-2&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="ev-scard">
+        <div class="top"><div class="nm">明光キッズ 富士見台スクール</div></div>
+        <div class="b">
+          <div class="row"><span class="lb">住所</span><span>東京都練馬区貫井3-3-10 富士屋ビル2F</span></div>
+          <div class="row"><span class="lb">アクセス</span><span>西武池袋線「富士見台駅」より徒歩1分</span></div>
+          <div class="row"><span class="lb">TEL</span><span><a class="tel-link" href="tel:03-3998-6030">03-3998-6030</a></span></div>
+          <iframe class="map-embed" src="https://maps.google.com/maps?q=東京都練馬区貫井3-3-10&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
